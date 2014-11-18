@@ -1,0 +1,347 @@
+#stage {
+  fullscreen:true;
+  color:0x000000;
+  scaleMode:showAll; /* exactFit | noBorder | noScale | showAll */
+  frameRate:30;
+  displayFrameRate:false;
+  width:1920;
+  height:1080;
+}
+
+#bg1 {
+  width:1920;
+  height:1080;  
+  }
+
+#bg2 {
+  autoupdate:true; /*autoupdate updates background to stage size*/
+}
+
+#attract {
+  timeout:120;
+  tweenFades:true;
+  tweenTime:0.5;
+  autupdate:true;
+}
+
+#img-attract {
+  alpha:0.75; 
+}
+
+
+#1{
+
+  dispatch:down:btn_sphere;
+  hit:sphere-hit;
+  initial:sphere-up;
+  down:sphere-down;
+  up:sphere-up;
+  out:sphere-up;
+  x:141;
+  y:1011;
+
+}
+#2{
+  dispatch:down:btn_sphere;
+  hit:sphere-hit;
+  initial:sphere-up;
+  down:sphere-down;
+  up:sphere-up;
+  out:sphere-up;
+  x:156;
+  y:904;
+
+}
+#3{
+  dispatch:down:btn_sphere;
+  hit:sphere-hit;
+  initial:sphere-up;
+  down:sphere-down;
+  up:sphere-up;
+  out:sphere-up;
+  x:185;
+  y:804;
+
+}
+#4{
+  dispatch:down:btn_sphere;
+  hit:sphere-hit;
+  initial:sphere-up;
+  down:sphere-down;
+  up:sphere-up;
+  out:sphere-up;
+  x:225;
+  y:707;
+
+}
+#5{
+  dispatch:down:btn_sphere;
+  hit:sphere-hit;
+  initial:sphere-up;
+  down:sphere-down;
+  up:sphere-up;
+  out:sphere-up;
+  x:280;
+  y:611;
+}
+#6{
+  dispatch:down:btn_sphere;
+  hit:sphere-hit;
+  initial:sphere-up;
+  down:sphere-down;
+  up:sphere-up;
+  out:sphere-up;
+  x:348;
+  y:523;
+}
+#7{
+  dispatch:down:btn_sphere;
+  hit:sphere-hit;
+  initial:sphere-up;
+  down:sphere-down;
+  up:sphere-up;
+  out:sphere-up;
+  x:433;
+  y:458;
+}
+#8{
+  dispatch:down:btn_sphere;
+  hit:sphere-hit;
+  initial:sphere-up;
+  down:sphere-down;
+  up:sphere-up;
+  out:sphere-up;
+  x:514;
+  y:391;
+}
+#9{
+  dispatch:down:btn_sphere;
+  hit:sphere-hit;
+  initial:sphere-up;
+  down:sphere-down;
+  up:sphere-up;
+  out:sphere-up;
+  x:614;
+  y:350;
+}
+#10{
+  dispatch:down:btn_sphere;
+  hit:sphere-hit;
+  initial:sphere-up;
+  down:sphere-down;
+  up:sphere-up;
+  out:sphere-up;
+  x:714;
+  y:315;
+}
+#11{
+  dispatch:down:btn_sphere;
+  hit:sphere-hit;
+  initial:sphere-up;
+  down:sphere-down;
+  up:sphere-up;
+  out:sphere-up;
+  x:1130;
+  y:315;
+}
+#12{
+  dispatch:down:btn_sphere;
+  hit:sphere-hit;
+  initial:sphere-up;
+  down:sphere-down;
+  up:sphere-up;
+  out:sphere-up;
+  x:1233;
+  y:350;
+}
+#13{
+  dispatch:down:btn_sphere;
+  hit:sphere-hit;
+  initial:sphere-up;
+  down:sphere-down;
+  up:sphere-up;
+  out:sphere-up;
+  x:1330;
+  y:398;
+}
+#14{
+  dispatch:down:btn_sphere;
+  hit:sphere-hit;
+  initial:sphere-up;
+  down:sphere-down;
+  up:sphere-up;
+  out:sphere-up;
+  x:1420;
+  y:462;
+}
+#15{
+  dispatch:down:btn_sphere;
+  hit:sphere-hit;
+  initial:sphere-up;
+  down:sphere-down;
+  up:sphere-up;
+  out:sphere-up;
+  x:1500;
+  y:527;
+}
+#16{
+  dispatch:down:btn_sphere;
+  hit:sphere-hit;
+  initial:sphere-up;
+  down:sphere-down;
+  up:sphere-up;
+  out:sphere-up;
+  x:1560;
+  y:611;
+}
+#17{
+  dispatch:down:btn_sphere;
+  hit:sphere-hit;
+  initial:sphere-up;
+  down:sphere-down;
+  up:sphere-up;
+  out:sphere-up;
+  x:1620;
+  y:707;
+}
+#18{
+  dispatch:down:btn_sphere;
+  hit:sphere-hit;
+  initial:sphere-up;
+  down:sphere-down;
+  up:sphere-up;
+  out:sphere-up;
+  x:1660;
+  y:804;
+}
+#19{
+  dispatch:down:btn_sphere;
+  hit:sphere-hit;
+  initial:sphere-up;
+  down:sphere-down;
+  up:sphere-up;
+  out:sphere-up;
+  x:1690;
+  y:904;
+}
+#20{
+  dispatch:down:btn_sphere;
+  hit:sphere-hit;
+  initial:sphere-up;
+  down:sphere-down;
+  up:sphere-up;
+  out:sphere-up;
+  x:1700;
+  y:1011;
+}
+#21{
+  dispatch:down:btn_sphere;
+  hit:sphere-hit;
+  initial:sphere-up;
+  down:sphere-down;
+  up:sphere-up;
+  out:sphere-up;
+  x:1802;
+  y:497;
+}
+#22{
+  dispatch:down:btn_sphere;
+  hit:sphere-hit;
+  initial:sphere-up;
+  down:sphere-down;
+  up:sphere-up;
+  out:sphere-up;
+  x:40;
+  y:497;
+}
+
+#sphere-up-bg {
+alpha:1;
+}
+
+#sphere-down-bg {
+alpha:.5;
+}
+
+#sphere-hit-bg {
+alpha:.5;
+}
+
+
+
+/*
+ *  Error Message
+ */
+
+#error {
+  visible:false;
+  touchChildren:false;
+  width:1920;
+  height:1080;
+}
+
+#error_background {
+  fill:color;
+  color:0x7D110C;
+  alpha:0.9;
+  shape:rectangle;
+  width:1920;
+  height:1080;
+}
+
+#error_text_container {
+  paddingTop:2;
+  paddingLeft:2; 
+  paddingRight:2;
+  width:1920;
+  height:1080;
+  relativeY:true;
+}
+
+#error_title {
+  fontSize:50;
+  color:0xFFFFFF;
+  font:OpenSansBold;
+  autosize:true;
+  width:1920;
+}
+
+#error_description {
+  fontSize:35;
+  wordWrap:true;
+  color:0xAEA79F;
+  width:1920; 
+  autosize:true;
+  multiline:true; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

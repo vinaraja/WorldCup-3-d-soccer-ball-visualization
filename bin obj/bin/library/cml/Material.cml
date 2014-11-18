@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	Mesh example
+	-->
+<cml>
+
+<Stage id="stage-1">
+
+<Background>
+<Container id="bg1" alpha="0" width="2048" height="1024">
+<Image id="bg-1"  src="library/assets/ui/blue_marble_august_desaturated_2048.jpg" ></Image>
+</Container>
+<Container id="bg2" alpha="0" width="2048" height="1024">
+<Image id="bg-2" src="library/assets/ui/1.jpg" ></Image>
+</Container>
+</Background>
+
+<!-- 
+	There are two types of materials: Color and Texture. Use the ref attribute to load the referenced AS3 material class.
+	-->
+<Material id="mat-1" ref="Color" color="0x423353" />
+<Material id="mat-2" ref="Texture" texture="#tex-1" />
+
+<!-- 
+	Link a Bitmap texture to the texture material
+	-->
+<Texture id="tex-1" ref="Bitmap" src="library/assets/ui/2.png" />
+<Texture id="tex-2" ref="Bitmap" src="library/assets/ui/blue_marble_august_desaturated_2048.jpg" />
+<Texture id="tex-3" ref="Bitmap" src="library/assets/ui/3.png" />
+
+
+
+
+<!-- 
+	Create some geometry
+	-->
+<Geometry id="geom-1" ref="Sphere" radius="100" segmentsW="32" segmentsH="24"/>
+
+
+<Scene id="scene" >
+   
+  
+	<Camera pos="0,0,-1000" lookat="0,0,0" viewBgColor="0xFFFFFF"/>
+	<!-- 
+		Apply the material to the Mesh with the material attribute
+	-->	
+	
+ <Container id ="mesh1">	
+  <Mesh id="mesh-1" geometry="#geom-1" material="#mat-2" touchEnabled="true" x="100">
+		<Gesture ref="n-drag-3d" />
+		<Gesture ref="n-rotate-3d" />
+		<Gesture ref="n-scale-3d" />
+	</Mesh>
+	</Container>
+	<Container id="mesh2">
+	<Mesh id="mesh-2" geometry="#geom-1" material="#mat-2" touchEnabled="true" x="-100">
+		<Gesture ref="n-drag-3d" />
+		<Gesture ref="n-rotate-3d" />
+		<Gesture ref="n-scale-3d" />
+	</Mesh>	
+	</Container>
+</Scene>
+
+
+</Stage>
+</cml>
